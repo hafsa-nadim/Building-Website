@@ -1,0 +1,40 @@
+@import "tailwindcss";
+.bg{
+    font-weight: bold;
+    color:white;
+    background-image: url(./assets/bg.jpg);
+    height: 950px;
+ background-repeat: no-repeat;
+}
+
+.home{
+   border-bottom: 3px solid red;
+}
+p{
+    font-size: 14px;
+}
+.content{
+   position: relative;
+   top:300px;
+}
+.h1{
+    font-size: 80px;
+}
+button{
+    background-color: rgb(249, 84, 84);
+    color: white;
+    padding:10px 30px;
+}
+.h2{
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+}
+.p1{
+    text-align: center;
+}
+.cards{
+   height:280px;
+}
