@@ -1,6 +1,11 @@
 import React from "react";
 import logo from './assets/gr.png';
-import bg from './assets/bg.jpg';
+import build1 from './assets/building1.jpg';
+import build2 from './assets/building2.jfif';
+import build3 from './assets/building3.jpg';
+import fac1 from './assets/fac1.jpg';
+import fac2 from './assets/fac2.jpg';
+import fac3 from './assets/fac3.webp';
 import './App.css';
 
 function App(){
@@ -92,21 +97,71 @@ function App(){
 
 <div className="global">
   
+   <h1 className="h2">Our Global campus</h1>
+  <p className="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, in.</p>
+  <br /><br /><br />
 
-<div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+<div className="grid grid-cols-2 md:grid-cols-3 gap-4 build">
     <div>
-        <img className="h-auto max-w-full rounded-base" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt=""/>
+        <img className="h-auto max-w-full rounded-base" src={build1} width={500} style={{height:'700px'}}/>
     </div>
     <div>
-        <img className="h-auto max-w-full rounded-base" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt=""/>
+        <img className="h-auto max-w-full rounded-base" src={build2} width={500} style={{height:'700px'}}/>
     </div>
     <div>
-        <img className="h-auto max-w-full rounded-base" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt=""/>
+        <img className="h-auto max-w-full rounded-base" src={build3} width={500} style={{height:'700px'}}/>
     </div>
     
 </div>
 
 </div>
+
+{/* facilities section */}
+
+<section class="text-gray-600 body-font">
+  <br /><br /><br />
+  <h1 className="h2">Our Facilities</h1>
+  <p className="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, in.</p>
+  
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap -m-4">
+      <div class="p-4 md:w-1/3">
+        <div class="h-full rounded-lg overflow-hidden">
+          <img class="lg:h-[300px] md:h-36 w-full object-cover object-center" src={fac2} alt="blog"/>
+          <div class="p-6">
+           
+            <h1 class="title-font text-2xl font-medium text-gray-900 mb-3">World Class Library</h1>
+            <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            
+          </div>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/3">
+        <div class="h-full rounded-lg overflow-hidden">
+          <img class="lg:h-[300px] md:h-36 w-full object-cover object-center" src={fac3} alt="blog"/>
+          <div class="p-6">
+            
+            <h1 class="title-font text-2xl font-medium text-gray-900 mb-3">Largest Play Ground</h1>
+            <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            
+          </div>
+        </div>
+      </div>
+      <div className="p-4 md:w-1/3">
+        <div className="h-full rounded-lg overflow-hidden">
+          <img className="lg:h-[300px] md:h-36 w-full object-cover object-center" src={fac1} alt="blog"/>
+          <div className="p-6">
+            <h1 className="title-font text-2xl font-medium text-gray-900 mb-3">Tasty and Healthy Food</h1>
+            <p className="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
         </>
     )
 }

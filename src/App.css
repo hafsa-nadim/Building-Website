@@ -38,3 +38,12 @@ button{
 .cards{
    height:280px;
 }
+.build{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.build img{
+    border-radius: 10px;
+}
