@@ -1,4 +1,14 @@
 @import "tailwindcss";
+.logo{
+   
+   position: relative;
+   bottom: 16px;
+   left: 50px;
+}
+.icon{
+    position: relative;
+    top:20px;
+}
 .bg{
     font-weight: bold;
     color:white;
